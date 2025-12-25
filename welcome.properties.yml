@@ -1,1 +1,5 @@
-msg : welcome to Altaf IT
+spring.application.name=welcome
+server.port=8084
+spring.boot.admin.client.url=http://localhost:8080/
+spring.config.import: optional:configserver:http://localhost:8083
+management.endpoints.web.exposure.include=*,refresh
